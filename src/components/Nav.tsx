@@ -32,7 +32,7 @@ export default function Nav() {
         letterSpacing: '-0.01em',
         color: 'var(--text-primary)',
       }}>
-        OOO<span style={{ color: 'var(--accent)' }}>.</span>
+        오가람<span style={{ color: 'var(--accent)' }}>.</span>
       </a>
 
       <div style={{ display: 'flex', gap: '2.5rem' }}>

@@ -40,7 +40,8 @@ export default function Hero() {
           marginBottom: '2.5rem',
         }}>
           안녕하세요,<br />
-          <span style={{ color: 'var(--accent)' }}>프론트엔드 개발자 OOO입니다.</span>
+          <span style={{ color: 'var(--accent)' }}>프론트엔드 개발자</span><br />
+          <span style={{ color: 'var(--accent)' }}>오가람입니다.</span>
         </h1>
 
         <div ref={lineRef} style={{
