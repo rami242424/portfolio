@@ -26,14 +26,14 @@ export default function About() {
               letterSpacing: '-0.02em',
               marginBottom: '2rem',
             }}>
-              코드 한 줄에도<br />
-              <span style={{ color: 'var(--accent)' }}>이유가 있습니다.</span>
+              실수가 일어날 지점을<br />
+              <span style={{ color: 'var(--accent)' }}>미리 찾습니다.</span>
             </h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.9, fontSize: '1rem' }}>
-              단순히 동작하는 코드가 아니라, 왜 이렇게 설계했는지 설명할 수 있는 코드를 씁니다. React와 TypeScript를 기반으로 사용자 경험을 중심에 두고 개발합니다.
+              일터에서나 코드에서나, 실수가 일어날 수 있는 지점을 먼저 찾고 검증 단계를 넣는 방식으로 일합니다. 매장에서 고객 응대를 단계화해 오안내를 줄였던 경험이, 지금은 코드에서 에러 케이스를 미리 분기 처리하는 방식으로 이어지고 있습니다.
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.9, fontSize: '1rem', marginTop: '1rem' }}>
-              [본인의 배경과 이야기를 여기에 채워주세요]
+              3년의 회사 생활과 2년 반의 주말 매장 근무 동안 한 번의 무단결근 없이 일해왔고, 같은 태도로 코드를 짭니다. 외국인 고객이 검색에 실패하는 장면을 매주 보면서 발견한 페인 포인트를 코드로 풀 수 있는 사람이 되고자 공부하고 있습니다.
             </p>
           </div>
 
