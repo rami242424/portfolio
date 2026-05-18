@@ -14,38 +14,37 @@ export default function Contact() {
           letterSpacing: '0.25em',
           color: 'var(--accent)',
           textTransform: 'uppercase',
-          marginBottom: '1.5rem',
+          marginBottom: '2rem',
+          fontWeight: 400,
         }}>
           Contact
         </p>
 
         <h2 style={{
           fontFamily: 'var(--font-display)',
-          fontSize: 'clamp(2.5rem, 6vw, 5rem)',
-          fontWeight: 800,
-          letterSpacing: '-0.02em',
-          lineHeight: 1.1,
+          fontSize: 'clamp(1.6rem, 2.8vw, 2.4rem)',
+          fontWeight: 500,
+          letterSpacing: '-0.005em',
+          lineHeight: 1.45,
           marginBottom: '2rem',
+          color: 'var(--text-primary)',
+          maxWidth: '600px',
         }}>
-          연락 주시면<br />
-          <span style={{ color: 'var(--accent)' }}>빠르게 회신드립니다.</span>
+          함께 일하고 <span style={{ color: 'var(--accent)', fontWeight: 600 }}>싶습니다.</span>
         </h2>
 
-        <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: 1.9, maxWidth: '480px', marginBottom: '3rem' }}>
-          채용·협업·기술 문의 모두 환영합니다.<br />
-          아래 채널로 편하게 연락 주세요.
+        <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.95, maxWidth: '480px', marginBottom: '3rem', fontWeight: 300 }}>
+          새로운 자리와 협업 기회에 열려 있습니다. 편하게 연락 주세요.
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1px', background: 'var(--border)', maxWidth: '480px' }}>
           {[
             { label: 'Email', value: '[본인 이메일 입력]', href: 'mailto:[본인 이메일 입력]' },
             { label: 'GitHub', value: 'github.com/rami242424', href: 'https://github.com/rami242424' },
-            // 노션 포트폴리오 링크가 있으면 추가 (선택)
-            // { label: 'Notion', value: '[본인 노션 링크]', href: '[본인 노션 링크]' },
           ].map(item => (
             <a key={item.label} href={item.href} target="_blank" rel="noreferrer" style={{
               background: 'var(--bg-card)',
-              padding: '1.25rem 1.5rem',
+              padding: '1.4rem 1.5rem',
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
@@ -54,10 +53,10 @@ export default function Contact() {
               onMouseEnter={e => (e.currentTarget as HTMLElement).style.background = 'var(--bg-card-hover)'}
               onMouseLeave={e => (e.currentTarget as HTMLElement).style.background = 'var(--bg-card)'}
             >
-              <span style={{ fontSize: '0.75rem', letterSpacing: '0.15em', color: 'var(--text-muted)', textTransform: 'uppercase' }}>
+              <span style={{ fontSize: '0.7rem', letterSpacing: '0.15em', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: 400 }}>
                 {item.label}
               </span>
-              <span style={{ fontSize: '0.9rem', color: 'var(--accent)' }}>{item.value} ↗</span>
+              <span style={{ fontSize: '0.85rem', color: 'var(--accent)' }}>{item.value} ↗</span>
             </a>
           ))}
         </div>
