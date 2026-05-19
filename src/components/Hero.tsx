@@ -22,26 +22,27 @@ export default function Hero() {
       <div style={{ maxWidth: '900px' }}>
         <p style={{
           fontFamily: 'var(--font-body)',
-          fontSize: '0.85rem',
-          letterSpacing: '0.2em',
+          fontSize: '0.8rem',
+          letterSpacing: '0.25em',
           color: 'var(--accent)',
           textTransform: 'uppercase',
-          marginBottom: '2rem',
+          marginBottom: '2.5rem',
+          fontWeight: 400,
         }}>
           Frontend Developer
         </p>
 
         <h1 style={{
           fontFamily: 'var(--font-display)',
-          fontSize: 'clamp(2.2rem, 5vw, 5rem)',
-          fontWeight: 800,
-          lineHeight: 1.15,
-          letterSpacing: '-0.02em',
-          marginBottom: '2.5rem',
+          fontSize: 'clamp(1.5rem, 2.8vw, 2.4rem)',
+          fontWeight: 500,
+          lineHeight: 1.5,
+          letterSpacing: '-0.005em',
+          marginBottom: '3rem',
+          color: 'var(--text-primary)',
+          maxWidth: '720px',
         }}>
-          맡은 일을 <span style={{ color: 'var(--accent)' }}>끝까지</span> 해내고,<br />
-          사용자가 <span style={{ color: 'var(--accent)' }}>막힐 지점</span>을<br />
-          미리 찾는 프론트엔드 개발자입니다.
+          맡은 일을 <span style={{ color: 'var(--accent)', fontWeight: 600 }}>끝까지</span> 해내고, 사용자가 <span style={{ color: 'var(--accent)', fontWeight: 600 }}>막힐 지점</span>을 미리 찾는 프론트엔드 개발자입니다.
         </h1>
 
         <div ref={lineRef} style={{
@@ -49,38 +50,38 @@ export default function Hero() {
           background: 'var(--border)',
           width: 0,
           transition: 'width 1s ease',
-          marginBottom: '2.5rem',
+          marginBottom: '3rem',
         }} />
 
         <p style={{
-          fontSize: 'clamp(1rem, 2vw, 1.2rem)',
+          fontSize: 'clamp(0.95rem, 1.3vw, 1.05rem)',
           color: 'var(--text-secondary)',
-          maxWidth: '500px',
-          lineHeight: 1.8,
+          maxWidth: '480px',
+          lineHeight: 1.9,
+          fontWeight: 300,
         }}>
-          현장에서 사용자의 페인 포인트를 관찰하는 일과,<br />
-          그 문제를 코드로 풀어내는 일에 관심이 많습니다.
+          현장에서 사용자의 페인 포인트를 관찰하는 일과, 그 문제를 코드로 풀어내는 일에 관심이 많습니다.
         </p>
 
-        <div style={{ display: 'flex', gap: '1.5rem', marginTop: '3rem' }}>
+        <div style={{ display: 'flex', gap: '1rem', marginTop: '3.5rem' }}>
           <a href="#projects" style={{
-            padding: '0.75rem 2rem',
+            padding: '0.85rem 2rem',
             border: '1px solid var(--accent)',
             color: 'var(--accent)',
             fontFamily: 'var(--font-display)',
-            fontWeight: 600,
-            fontSize: '0.9rem',
+            fontWeight: 500,
+            fontSize: '0.85rem',
             letterSpacing: '0.05em',
           }}>
             프로젝트 보기
           </a>
           <a href="#contact" style={{
-            padding: '0.75rem 2rem',
+            padding: '0.85rem 2rem',
             border: '1px solid var(--border-hover)',
             color: 'var(--text-secondary)',
             fontFamily: 'var(--font-display)',
-            fontWeight: 600,
-            fontSize: '0.9rem',
+            fontWeight: 500,
+            fontSize: '0.85rem',
             letterSpacing: '0.05em',
           }}>
             연락하기
