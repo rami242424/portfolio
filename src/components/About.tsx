@@ -29,7 +29,10 @@ export default function About() {
               color: 'var(--text-primary)',
               maxWidth: '420px',
             }}>
-              실수가 일어날 지점을 <span style={{ color: 'var(--accent)', fontWeight: 600 }}>미리 찾습니다.</span>
+              실수가 일어날 지점을{' '}
+              <span style={{ color: 'var(--accent)', fontWeight: 600, whiteSpace: 'nowrap' }}>
+                미리 찾습니다.
+              </span>
             </h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.95, fontSize: '0.95rem', fontWeight: 300 }}>
               일터에서나 코드에서나, 실수가 일어날 수 있는 지점을 먼저 찾고 검증 단계를 넣는 방식으로 일합니다. 매장에서 고객 응대를 단계화해 오안내를 줄였던 경험이, 지금은 코드에서 에러 케이스를 미리 분기 처리하는 방식으로 이어지고 있습니다.
