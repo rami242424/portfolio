@@ -30,7 +30,10 @@ export default function Contact() {
           color: 'var(--text-primary)',
           maxWidth: '600px',
         }}>
-          함께 일하고 <span style={{ color: 'var(--accent)', fontWeight: 600 }}>싶습니다.</span>
+          함께 일하고{' '}
+          <span style={{ color: 'var(--accent)', fontWeight: 600, whiteSpace: 'nowrap' }}>
+            싶습니다.
+          </span>
         </h2>
 
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.95, maxWidth: '480px', marginBottom: '3rem', fontWeight: 300 }}>
