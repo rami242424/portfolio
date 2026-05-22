@@ -42,7 +42,15 @@ export default function Hero() {
           color: 'var(--text-primary)',
           maxWidth: '720px',
         }}>
-          맡은 일을 <span style={{ color: 'var(--accent)', fontWeight: 600 }}>끝까지</span> 해내고, 사용자가 <span style={{ color: 'var(--accent)', fontWeight: 600 }}>막힐 지점</span>을 미리 찾는 프론트엔드 개발자입니다.
+          맡은 일을{' '}
+          <span style={{ color: 'var(--accent)', fontWeight: 600, whiteSpace: 'nowrap' }}>
+            끝까지
+          </span>{' '}
+          해내고, 사용자가{' '}
+          <span style={{ color: 'var(--accent)', fontWeight: 600, whiteSpace: 'nowrap' }}>
+            막힐 지점
+          </span>
+          을 미리 찾는 프론트엔드 개발자입니다.
         </h1>
 
         <div ref={lineRef} style={{
