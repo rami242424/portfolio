@@ -37,7 +37,7 @@ export default function Contact() {
         </h2>
 
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.95, maxWidth: '480px', marginBottom: '3rem', fontWeight: 300 }}>
-          새로운 자리와 협업 기회에 열려 있습니다. 편하게 연락 주세요.
+          새로운 자리와 협업를 기회 기다리고 있습니다. 편하게 연락 주세요.
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1px', background: 'var(--border)', maxWidth: '480px' }}>
