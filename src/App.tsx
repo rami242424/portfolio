@@ -23,7 +23,7 @@ function App() {
         justifyContent: 'space-between',
         alignItems: 'center',
       }}>
-        <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>© 2026 OOO</span>
+        <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>© 2026</span>
         <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Built with React + TypeScript</span>
       </footer>
     </>
