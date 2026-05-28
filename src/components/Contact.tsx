@@ -42,7 +42,7 @@ export default function Contact() {
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1px', background: 'var(--border)', maxWidth: '480px' }}>
           {[
-            { label: 'Email', value: '[dhrkfkald@naver.com]', href: 'mailto:[dhrkfkald@naver.com]' },
+            { label: 'Email', value: '[dhrkfkald@naver.com]', href: 'mailto:dhrkfkald@naver.com' },
             { label: 'GitHub', value: 'github.com/rami242424', href: 'https://github.com/rami242424' },
           ].map(item => (
             <a key={item.label} href={item.href} target="_blank" rel="noreferrer" style={{
