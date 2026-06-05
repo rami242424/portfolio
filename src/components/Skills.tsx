@@ -7,7 +7,7 @@ const skills = [
   },
   {
     category: 'Styling',
-    items: ['CSS Modules', 'Tailwind CSS', 'Responsive Design'],
+    items: ['CSS Modules', 'Tailwind CSS', 'styled-components', 'Responsive Design'],
   },
   {
     category: 'State & Data',
