@@ -89,7 +89,7 @@ export default function Projects() {
                     )}
                   </div>
                 </div>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
+                <p style={{ color: '#b5b2ac', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
                   {project.description}
                 </p>
                 <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.4rem', marginBottom: '1.5rem' }}>
