@@ -36,7 +36,7 @@ export default function Nav() {
       </a>
 
       <div style={{ display: 'flex', gap: '2.5rem' }}>
-        {['about', 'skills', 'projects', 'contact'].map(item => (
+        {['about', 'skills', 'projects', 'experience', 'contact'].map(item => (
           <a
             key={item}
             href={`#${item}`}
