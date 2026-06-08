@@ -84,7 +84,7 @@ export default function Projects() {
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1px', background: 'var(--border)' }}>
           {projects.map(project => (
-            <div key={project.number} style={{
+            <div key={project.number} className="project-card" style={{
               background: 'var(--bg)',
               padding: '2.5rem 0',
               display: 'grid',
@@ -102,11 +102,11 @@ export default function Projects() {
                 </span>
               </div>
               <div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
+                <div className="project-head" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
                   <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', fontWeight: 700, letterSpacing: '-0.01em' }}>
                     {project.title}
                   </h3>
-                  <div style={{ display: 'flex', gap: '1rem', flexShrink: 0, marginLeft: '1rem', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
+                  <div className="project-links" style={{ display: 'flex', gap: '1rem', flexShrink: 0, marginLeft: '1rem', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
                     <a href={project.demo} target="_blank" rel="noreferrer" style={{ fontSize: '0.8rem', color: 'var(--accent)', letterSpacing: '0.05em' }}>Demo ↗</a>
                     <a href={project.github} target="_blank" rel="noreferrer" style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', letterSpacing: '0.05em' }}>GitHub ↗</a>
                     {project.notion && (
