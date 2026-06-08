@@ -120,8 +120,7 @@ export default function Nav() {
           style={{
             position: 'fixed',
             inset: 0,
-            background: 'rgba(10,10,10,0.97)',
-            backdropFilter: 'blur(12px)',
+            background: 'var(--bg)',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
