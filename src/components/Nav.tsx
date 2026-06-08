@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { createPortal } from 'react-dom'
 
 const items = ['about', 'skills', 'projects', 'experience', 'contact']
 
@@ -19,6 +20,7 @@ export default function Nav() {
   }, [open])
 
   return (
+    <>
     <nav style={{
       position: 'fixed',
       top: 0,
@@ -78,7 +80,8 @@ export default function Nav() {
           border: 'none',
           cursor: 'pointer',
           padding: '0.5rem',
-          zIndex: 2,
+          zIndex: 300,
+          position: 'relative',
           flexDirection: 'column',
           gap: '5px',
           width: '40px',
@@ -112,42 +115,61 @@ export default function Nav() {
           transform: open ? 'translateY(-7px) rotate(-45deg)' : 'none',
         }} />
       </button>
+    </nav>
 
-      {/* 모바일 펼침 메뉴 */}
-      {open && (
-        <div
-          className="nav-menu-mobile"
+    {/* 모바일 펼침 메뉴 — Portal로 body 직속에 렌더 (nav 쌓임 맥락에서 분리) */}
+    {open && createPortal(
+      <div
+        className="nav-menu-mobile"
+        style={{
+          position: 'fixed',
+          inset: 0,
+          background: 'var(--bg)',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '2rem',
+          zIndex: 9999,
+        }}
+      >
+        <button
+          aria-label="메뉴 닫기"
+          onClick={() => setOpen(false)}
           style={{
-            position: 'fixed',
-            inset: 0,
-            background: 'var(--bg)',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '2rem',
-            zIndex: 1,
+            position: 'absolute',
+            top: '1.25rem',
+            right: 'clamp(1.5rem, 8vw, 8rem)',
+            background: 'none',
+            border: 'none',
+            color: 'var(--text-primary)',
+            fontSize: '1.5rem',
+            cursor: 'pointer',
+            lineHeight: 1,
           }}
         >
-          {items.map(item => (
-            <a
-              key={item}
-              href={`#${item}`}
-              onClick={() => setOpen(false)}
-              style={{
-                fontFamily: 'var(--font-display)',
-                fontSize: '1.5rem',
-                fontWeight: 600,
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase',
-                color: 'var(--text-primary)',
-              }}
-            >
-              {item}
-            </a>
-          ))}
-        </div>
-      )}
-    </nav>
+          ✕
+        </button>
+        {items.map(item => (
+          <a
+            key={item}
+            href={`#${item}`}
+            onClick={() => setOpen(false)}
+            style={{
+              fontFamily: 'var(--font-display)',
+              fontSize: '1.5rem',
+              fontWeight: 600,
+              letterSpacing: '0.05em',
+              textTransform: 'uppercase',
+              color: 'var(--text-primary)',
+            }}
+          >
+            {item}
+          </a>
+        ))}
+      </div>,
+      document.body
+    )}
+    </>
   )
 }
