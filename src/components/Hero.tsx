@@ -34,13 +34,13 @@ export default function Hero() {
 
         <h1 style={{
           fontFamily: 'var(--font-display)',
-          fontSize: 'clamp(1.5rem, 2.8vw, 2.4rem)',
+          fontSize: 'clamp(1.5rem, 3.2vw, 2.9rem)',
           fontWeight: 500,
           lineHeight: 1.5,
           letterSpacing: '-0.005em',
           marginBottom: '3rem',
           color: 'var(--text-primary)',
-          maxWidth: '720px',
+          maxWidth: '960px',
         }}>
           맡은 일을{' '}
           <span style={{ color: 'var(--accent)', fontWeight: 600, whiteSpace: 'nowrap' }}>
@@ -50,7 +50,9 @@ export default function Hero() {
           <span style={{ color: 'var(--accent)', fontWeight: 600, whiteSpace: 'nowrap' }}>
             막힐 지점
           </span>
-          을 미리 찾는 프론트엔드 개발자입니다.
+          을{' '}
+          <br className="hero-br" />
+          미리 찾는 프론트엔드 개발자입니다.
         </h1>
 
         <div ref={lineRef} style={{
