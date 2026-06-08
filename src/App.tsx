@@ -1,7 +1,6 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Skills from './components/Skills'
-
 import Experience from './components/Experience'
 import Publication from './components/Publication'
 import About from './components/About'

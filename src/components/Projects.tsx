@@ -18,7 +18,7 @@ const projects = [
     ],
     demo: 'https://weather-now-nine-iota.vercel.app/',
     github: 'https://github.com/rami242424/Weather-app',
-    notion: '', // 노션 상세 페이지 링크 (본인이 채우기)
+    notion: '', 
   },
   {
     number: '02',
@@ -36,7 +36,7 @@ const projects = [
     ],
     demo: 'https://movie-app-zeta-ruby.vercel.app/',
     github: 'https://github.com/rami242424/movie-app',
-    notion: '', // 노션 상세 페이지 링크 (본인이 채우기)
+    notion: '', 
   },
 ]
 

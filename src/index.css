@@ -65,3 +65,43 @@ a {
   opacity: 1;
   transform: translateY(0);
 }
+/* ===== 모바일 대응 ===== */
+
+/* 한글 단어가 어절 단위로 줄바꿈되도록 (글자 중간에서 깨지는 것 방지) */
+body {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* 가로 스크롤(옆으로 삐져나감) 원천 차단 */
+html, body {
+  overflow-x: hidden;
+}
+
+/* About · Experience 등 2열 그리드 → 모바일에서 1열로 */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+}
+
+/* ===== 네비게이션 반응형 ===== */
+
+/* 데스크탑: 가로 메뉴 보이고, 햄버거 숨김 */
+.nav-links-desktop {
+  display: flex;
+}
+.nav-burger {
+  display: none;
+}
+
+/* 모바일(768px 이하): 가로 메뉴 숨기고, 햄버거 보임 */
+@media (max-width: 768px) {
+  .nav-links-desktop {
+    display: none;
+  }
+  .nav-burger {
+    display: flex;
+  }
+}
