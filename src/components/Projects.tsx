@@ -38,6 +38,24 @@ const projects = [
     github: 'https://github.com/rami242424/movie-app',
     notion: '', 
   },
+  {
+    number: '03',
+    title: 'Kanban Board',
+    description: '@hello-pangea/dnd 기반 드래그앤드롭 칸반 보드. 카드 CRUD와 컬럼 간 이동, 새로고침 후 상태 유지를 지원합니다.',
+    tags: ['React', 'TypeScript', 'Recoil', 'styled-components'],
+    points: [
+      '@hello-pangea/dnd로 컬럼 내·컬럼 간 카드 드래그앤드롭 구현',
+      'recoil-persist로 localStorage에 상태를 저장해 새로고침 후에도 데이터 유지',
+      'Droppable 영역에 transform을 주면 dnd 좌표 계산이 깨지는 문제를 background 색 변화로 우회',
+    ],
+    images: [
+      { src: '/projects/kanban-demo.gif', alt: 'Kanban Board 카드 드래그앤드롭 시연' },
+      { src: '/projects/kanban-board.png', alt: 'TO DO·DOING·DONE 3열 보드 화면' },
+    ],
+    demo: 'https://kanban-board-nu-ruby.vercel.app/',
+    github: 'https://github.com/rami242424/kanban-board',
+    notion: '', 
+  },
 ]
 
 export default function Projects() {
