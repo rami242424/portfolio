@@ -111,7 +111,7 @@ html, body {
     grid-template-columns: 1fr !important;
     gap: 0.5rem !important;
   }
-  /* 제목과 링크(Demo·GitHub·Notion)를 세로로 쌓아 잘림 방지 */
+  
   .project-head {
     flex-direction: column !important;
     gap: 0.75rem !important;
