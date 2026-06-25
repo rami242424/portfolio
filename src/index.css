@@ -88,7 +88,6 @@ html, body {
 
 /* ===== 네비게이션 반응형 ===== */
 
-/* 데스크탑: 가로 메뉴 보이고, 햄버거 숨김 */
 .nav-links-desktop {
   display: flex;
 }
@@ -96,7 +95,6 @@ html, body {
   display: none;
 }
 
-/* 모바일(768px 이하): 가로 메뉴 숨기고, 햄버거 보임 */
 @media (max-width: 768px) {
   .nav-links-desktop {
     display: none;
@@ -106,7 +104,6 @@ html, body {
   }
   .hero-br { display: none; }
 
-  /* Projects 카드: 모바일에서 1열 (번호 위, 본문 아래) */
   .project-card {
     grid-template-columns: 1fr !important;
     gap: 0.5rem !important;
