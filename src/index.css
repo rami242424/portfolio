@@ -78,7 +78,7 @@ html, body {
   overflow-x: hidden;
 }
 
-/* About · Experience 등 2열 그리드 → 모바일에서 1열로 */
+
 @media (max-width: 768px) {
   .about-grid {
     grid-template-columns: 1fr !important;
