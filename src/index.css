@@ -73,7 +73,6 @@ body {
   overflow-wrap: break-word;
 }
 
-/* 가로 스크롤(옆으로 삐져나감) 원천 차단 */
 html, body {
   overflow-x: hidden;
 }
