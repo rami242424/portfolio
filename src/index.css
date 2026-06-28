@@ -67,7 +67,6 @@ a {
 }
 /* ===== 모바일 대응 ===== */
 
-/* 한글 단어가 어절 단위로 줄바꿈되도록 (글자 중간에서 깨지는 것 방지) */
 body {
   word-break: keep-all;
   overflow-wrap: break-word;
