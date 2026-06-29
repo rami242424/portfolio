@@ -65,7 +65,6 @@ a {
   opacity: 1;
   transform: translateY(0);
 }
-/* ===== 모바일 대응 ===== */
 
 body {
   word-break: keep-all;
