@@ -23,7 +23,7 @@ const careers = [
   },
   {
     company: '대상에스티',
-    period: '2018.04 ~ 2019.05',
+    period: '2018.06 ~ 2019.05',
     role: '사원',
     points: [
       '생산수량·불량수량 일일 집계 및 ERP 입력',
