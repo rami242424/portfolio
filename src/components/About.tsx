@@ -44,9 +44,7 @@ export default function About() {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', paddingTop: '0.5rem' }}>
             {[
-              { label: 'GitHub', value: 'github.com/rami242424', href: 'https://github.com/rami242424' },
-              { label: '관심 분야', value: '뷰티 · 헬스 · 언어교육' },
-              { label: '현재 상태', value: '취업 준비 중' },
+              { label: 'GitHub', value: 'github.com/rami242424', href: 'https://github.com/rami242424' }
             ].map(item => (
               <div key={item.label} style={{
                 display: 'flex',
