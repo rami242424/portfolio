@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root {
-  --bg: #0a0a0a;
-  --bg-card: #111111;
-  --bg-card-hover: #161616;
-  --border: rgba(255, 255, 255, 0.07);
-  --border-hover: rgba(255, 255, 255, 0.15);
-  --text-primary: #f0ede8;
-  --text-secondary: #888880;
-  --text-muted: #888884;
-  --accent: #d4a853;
-  --accent-dim: rgba(212, 168, 83, 0.12);
-  --font-display: 'Syne', sans-serif;
-  --font-body: 'DM Sans', sans-serif;
+  --bg: #faf7f1;
+  --bg-card: #ffffff;
+  --bg-card-hover: #fdfaf4;
+  --border: rgba(23, 25, 28, 0.1);
+  --border-hover: rgba(196, 80, 43, 0.45);
+  --text-primary: #1a1c1f;
+  --text-secondary: #595e66;
+  --text-muted: #8a8e96;
+  --accent: #c4502b;
+  --accent-dim: rgba(196, 80, 43, 0.1);
+  --font-display: 'Space Grotesk', 'Pretendard Variable', sans-serif;
+  --font-body: 'Pretendard Variable', Pretendard, -apple-system, sans-serif;
 }
 
 *, *::before, *::after {
@@ -29,8 +30,9 @@ body {
   background: var(--bg);
   color: var(--text-primary);
   font-family: var(--font-body);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7;
+  letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -51,7 +53,7 @@ a {
   background: var(--bg);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--text-muted);
+  background: #cdc7ba;
   border-radius: 2px;
 }
 
